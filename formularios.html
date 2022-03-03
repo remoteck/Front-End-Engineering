@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula HTML e CSS - Formulários</title>
+    </head>
+    <body>
+        <header>
+            <h2>Formulário de Contato</h2>
+        </header>
+
+        <section>
+
+            <nav>
+                <ul>
+                    <li><a href="./layout.html">Home</a></li>
+                    <li><a href="#contato">Contact</a></li>
+                    <li><a href="#sobre">About</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Contato</h1>
+                <p>Preencha os campos abaixo</p>
+
+                <form method="post">
+
+                <div>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label><br>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div>
+                    <label for="msg">Mensagem</label><br>
+                    <textarea name="msg" id="msg" row="255" placeholder="Digite sua mensagem"></textarea>
+                </div>
+
+                <div>
+                    <p>
+                        <label>Quais linguagem você prefere?</label>
+                        <input type="radio" name="proglang" value="html"> HTML
+                        <input type="radio" name="proglang" value="css"> CSS
+                        <input type="radio" name="proglang" value="javascript"> JavaScript
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <label>Quais linguagens você conhece?</label>
+                        <input type="checkbox" name="proglang" value="html"> HTML
+                        <input type="checkbox" name="proglang" value="css"> CSS
+                        <input type="checkbox" name="proglang" value="javascript"> JavaScript
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                    <label>Qual seu framework favorito?</label>
+                    <select>
+                        <option value="null" selected></option>
+                        <option value="bootstrap">Bootstrap</option>
+                        <option value="dotnet">.NET Framework</option>
+                        <option value="react">React</option>
+                        <option value="vue">Vue</option>
+                        <option value="next">Next</option>
+                        <option value="node">Node</option>
+                        <option value="react-native">React Native</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit">
+                </div>
+
+                </form>
+            </article>
+
+        </section>
+
+        <footer>
+            <p>Developed by Guilherme Gaspar Perroni.</p>
+        </footer>
+    </body>
+</html>
